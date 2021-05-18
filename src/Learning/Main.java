@@ -6,7 +6,8 @@
 package Learning;
 import javax.lang.model.type.NullType;
 import java.lang.Math;
-import java.util.Arrays;
+import java.util.Scanner;
+
 /**
  *
  * @author mpirixan
@@ -16,11 +17,16 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+        Arrays arrays = new Arrays();
+        System.out.print("Escolha o indice de quer acessar do char:");
+        int indicechar = in.nextInt();
+        System.out.print("Escolha o indice de quer acessar do int:");
+        int indiceint = in.nextInt();
 
-    Calculus add = new Calculus();
-    int s = add.addTwoInt(5,5);
-    System.out.println("Sum of two integer values :"+ s);
-    
-    }  
+        arrays.charArray(indicechar);
+        arrays.intArray(indiceint);
+    }
+
 }
 
