@@ -1,4 +1,4 @@
-package Learning;
+package br.com.bank.application;
 
 public class Arrays {
 
